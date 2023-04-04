@@ -45,7 +45,7 @@
 // ####
 // #####
 // El tamaño de la piramide puede ser de n posiciones
-//Intento #1 (logica-inversa)
+//Metodo #1 (logica-inversa)
 let num_1 = parseInt(prompt("Ingresa la cantidad de niveles que tenga la piramide: "));
 let numeral = ""
 let identacion = ""
@@ -55,7 +55,7 @@ let identacion = ""
         if(j != num_1) numeral += "#"
         console.log(identacion+numeral)
     }
-//Intento #2:
+//Metodo #2:
 // let num_2 = parseInt(prompt("Ingresa la cantidad de niveles que tenga la piramide: "));
 // let numeral_2 = ""
 // let identacion_2 = " "
