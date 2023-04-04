@@ -1,6 +1,6 @@
 
 //Funciones
-//En x -> pa el nomrbre de la funcions y dentro de los parentesis los (parametros)
+//En x -> para el nomrbre de la funcions y dentro de los parentesis los (parametros)
 // function x(){}
 // let x = () => {}
 // const x = (){}
@@ -45,12 +45,25 @@
 // ####
 // #####
 // El tamaño de la piramide puede ser de n posiciones
-
+//Intento #1 (logica-inversa)
+let num_1 = parseInt(prompt("Ingresa la cantidad de niveles que tenga la piramide: "));
 let numeral = ""
 let identacion = ""
-    for(let j = 8; j >= 0; j--){
+    for(let j = num_1; j >= 0; j--){
         identacion = " ".repeat(j);
         numeral += "#"
         if(j <= 7) numeral += "#"
         console.log(identacion+numeral)
     }
+//Intento #2:
+let num_2 = parseInt(prompt("Ingresa la cantidad de niveles que tenga la piramide: "));
+let numeral_2 = ""
+let identacion_2 = " "
+    identacion_2 = identacion_2.repeat(num_2)
+    for(let j = 0; j < num_2; j++){
+        identacion_2 = identacion_2.slice(0, -1);
+        numeral_2 += "x"
+        if(j > 0) numeral_2 += "x"
+        console.log(identacion_2+numeral_2)
+    }
+    
