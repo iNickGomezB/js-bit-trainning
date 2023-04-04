@@ -1,4 +1,4 @@
-console.log("Hello Nick")
+
 //Funciones
 //En x -> pa el nomrbre de la funcions y dentro de los parentesis los (parametros)
 // function x(){}
@@ -21,19 +21,36 @@ console.log("Hello Nick")
 
 
 
-let num = parseInt(prompt("Ingresa un numero"));
-let num_1 = "";
-let primo = 0;
-let multiplo_1 = 0;
-for(let i = num; i <= num*2; i++){
-    let multiplo_2 = 0;
-    for(let j = 1; j <= num*2; j++){
-        if(i === num && i % j == 0) multiplo_1 += 1;
-        else if ( i !== num && i % j == 0) multiplo_2 += 1;
+// let num = parseInt(prompt("Ingresa un numero"));
+// let num_1 = "";
+// let primo = 0;
+// let multiplo_1 = 0;
+// for(let i = num; i <= num*2; i++){
+//     let multiplo_2 = 0;
+//     for(let j = 1; j <= num*2; j++){
+//         if(i === num && i % j == 0) multiplo_1 += 1;
+//         else if ( i !== num && i % j == 0) multiplo_2 += 1;
+//     }
+//     if(multiplo_1 === 2 ? num_1 = " es primo" : num_1 = " no es primo"); 
+//     if(multiplo_2 === 2) {
+//         primo = i; break;
+//     }
+// }
+// alert(`${num} ${num_1} y el siguiente primo es: ${primo}`)
+
+// El estudiante debe construir un algoritmo que le permita generar la siguiente figura por consola
+// #
+// ##
+// ###
+// ####
+// #####
+// El tamaño de la piramide puede ser de n posiciones
+
+let numeral = ""
+let identacion = ""
+    for(let j = 8; j >= 0; j--){
+        identacion = " ".repeat(j);
+        numeral += "#"
+        if(j <= 7) numeral += "#"
+        console.log(identacion+numeral)
     }
-    if(multiplo_1 === 2 ? num_1 = " es primo" : num_1 = " no es primo"); 
-    if(multiplo_2 === 2) {
-        primo = i; break;
-    }
-}
-alert(`${num} ${num_1} y el siguiente primo es: ${primo}`)
