@@ -45,16 +45,17 @@
 // ####
 // #####
 // El tamaño de la piramide puede ser de n posiciones
+
 //Metodo #1 (logica-inversa)
-let num_1 = parseInt(prompt("Ingresa la cantidad de niveles que tiene la piramide: "));
-let numeral = ""
-let identacion = ""
-    for(let j = num_1; j >= 0; j--){
-        identacion = " ".repeat(j);
-        numeral += "#"
-        if(j != num_1) numeral += "#"
-        console.log(identacion+numeral)
-    }
+// let num_1 = parseInt(prompt("Ingresa la cantidad de niveles que tiene la piramide: "));
+// let numeral = ""
+// let identacion = ""
+//     for(let j = num_1; j >= 0; j--){
+//         identacion = " ".repeat(j);
+//         numeral += "#"
+//         if(j !== num_1) numeral += "#"
+//         console.log(identacion+numeral)
+//     }
 //Metodo #2:
 // let num_2 = parseInt(prompt("Ingresa la cantidad de niveles que tiene la piramide: "));
 // let numeral_2 = ""
@@ -67,3 +68,12 @@ let identacion = ""
 //         console.log(identacion_2+numeral_2)
 //     }
     
+// En JavaScript el usuario a través de un prompt debería poder ingresar un número y este debería responderle con el nombre del apostol al que pertenece ese numero
+
+// Ejemplo: El apostol 4 es pedro
+
+// Avanzado: El algoritmo debe usar arrays
+
+let apostoles = ["Pedro","Santiago, el Anciano","Juan","Andres","Bartolome","Santiago, el Menor","Judas Iscariote","Judas Tadeo","Mateo","Felipe","Simon","Tomas"]
+let num = parseInt(prompt("Ingresa un numero: "))
+console.log(`El apostol ${num} es: ${apostoles[num]}`)
