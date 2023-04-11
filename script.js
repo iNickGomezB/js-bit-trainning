@@ -74,6 +74,6 @@
 
 // Avanzado: El algoritmo debe usar arrays
 
-let apostoles = ["Pedro","Santiago, el Anciano","Juan","Andres","Bartolome","Santiago, el Menor","Judas Iscariote","Judas Tadeo","Mateo","Felipe","Simon","Tomas"]
-let num = parseInt(prompt("Ingresa un numero: "))
-console.log(`El apostol ${num} es: ${apostoles[num]}`)
+// let apostoles = ["Pedro","Santiago, el Anciano","Juan","Andres","Bartolome","Santiago, el Menor","Judas Iscariote","Judas Tadeo","Mateo","Felipe","Simon","Tomas"]
+// let num = parseInt(prompt("Ingresa un numero: "))
+// console.log(`El apostol ${num} es: ${apostoles[num]}`)
