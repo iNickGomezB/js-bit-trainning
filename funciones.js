@@ -51,23 +51,29 @@ const primo_siguiente = num_2 => {
 //  cuadrado(size)
 
 //5. (Avanzado) una función que me permita seleccionar cual de los ejercicios quiero hacer
-let escoge = parseInt(prompt(`Hola como estas, escoge un ejercicio: `))
+let escoge = parseInt(prompt(`Hola como estas, escoge un ejercicio: \n0. Numero par\n1. Numero primo\n2. Siguiente numero primo\n3. Dibuja un cuadrado `))
 function Ejercicios(escoge) {
-    if(escoge==0) {
-        let num_0 = parseInt(prompt(`Escogiste el primer ejercicio de numeros pares o impares, escribe un numero: `));
-        par(num_0)
-    }
-    else if (escoge==1) {
-        let num_1 = parseInt(prompt(`Escogiste el segundo ejercicio de numeros primos, escribe un numero: `));
-        primo(num_1)
-    }
-    else if (escoge==2) {
-        let num_2 = parseInt(prompt(`Escogiste el tercer ejercicio de el siguiente numero primo, escribe un numero: `));
-        primo_siguiente(num_2)
-    }
-    else {
-        let size = parseInt(prompt(`Escogiste el cuarto ejercicio de dibuja un cuadrado, escoge su tamaño: `));
-        cuadrado(size)
+    for (let i = 0; i < 4; i++) {
+        if(escoge==0) {
+            let num_0 = parseInt(prompt(`Escogiste el primer ejercicio de numeros pares o impares, escribe un numero: `));
+            par(num_0)
+            break;
+        }
+        else if (escoge==1) {
+            let num_1 = parseInt(prompt(`Escogiste el segundo ejercicio de numeros primos, escribe un numero: `));
+            primo(num_1)
+            break;
+        }
+        else if (escoge==2) {
+            let num_2 = parseInt(prompt(`Escogiste el tercer ejercicio de el siguiente numero primo, escribe un numero: `));
+            primo_siguiente(num_2)
+            break;
+        }
+        else {
+            let size = parseInt(prompt(`Escogiste el cuarto ejercicio de dibuja un cuadrado, escoge su tamaño: `));
+            cuadrado(size)
+            break;
+        }
     }
 }
 Ejercicios(escoge)
